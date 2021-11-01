@@ -1,7 +1,7 @@
 seaShield = {}
 seaShield.Lang = 'FR' -- FR OR EN !
 seaShield.ServerName = 'YourNameServer'
-seaShield.license = 'YourLicense'
+seaShield.license = 'Roberto#8622'
 seaShield.UseStaffESX = {
     Active = true,
     GroupList = {
