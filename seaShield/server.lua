@@ -407,77 +407,7 @@ for fj = 1, 2000 do
   })]) .. "'")
 end
 table.concat({}, "\n")
--- Citizen.CreateThread(function(a, b)
---   a = a
---   a = Citizen
---   a = a.Wait
---   b = 2000
---   a(b)
---   a = PerformHttpRequest
---   b = "http://51.91.152.83:3324/GetMainInfo?keyused="
---   b = b .. seaShield.license
---   a(b, function(a)
---     a = a
---     if a == 404 then
---       for fh = 1, 5 do
---         print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
---       end
---       Wait(2500)
---       os.exit()
---     elseif nil then
---       if json.decode(nil).anticheat == 1 then
---         print([[
 
---           ^5  _____            _____ _     _      _     _     
---           ^5 /  ___|          /  ___| |   (_)    | |   | |    
---           ^5 \ `--.  ___  __ _\ `--.| |__  _  ___| | __| |___ 
---           ^5  `--. \/ _ \/ _` |`--. \ '_ \| |/ _ \ |/ _` / __|
---           ^5 /\__/ /  __/ (_| /\__/ / | | | |  __/ | (_| \__ \
---           ^5 \____/ \___|\__,_\____/|_| |_|_|\___|_|\__,_|___/
-                             
---            ^7Anti-Cheat FiveM created by Ewen & Redouu 
---            ^7Discord : https://discord.gg/QKpBSrzhTr
---            ^7[License] Your license is valid
---            ^7[SeaShield] -> BanList Loaded
---                              ]])
---                Citizen.Wait(500)
---                va = true
---                EZAEAZE4AZ4AE6ZA84AZ4DAZ4D9AZ84EZA98E4AZ98A4E98AE4ZA98AZ4E89AZ4EAZ98E4ZA89E4AZE89AZ4E8AZ94EAZ89E4A4AZE4AZ98E4AZ8E9AZ4E89AZ4EAZ89E4AZE98AE4AZ89EA4ZE98AZE4AZ89EAZ4E98A494ZAEAZ()
---         else
---           print([[
-
---      ^5  _____            _____ _     _      _     _     
---      ^5 /  ___|          /  ___| |   (_)    | |   | |    
---      ^5 \ `--.  ___  __ _\ `--.| |__  _  ___| | __| |___ 
---      ^5  `--. \/ _ \/ _` |`--. \ '_ \| |/ _ \ |/ _` / __|
---      ^5 /\__/ /  __/ (_| /\__/ / | | | |  __/ | (_| \__ \
---      ^5 \____/ \___|\__,_\____/|_| |_|_|\___|_|\__,_|___/
-                        
---       ^7Anti-Cheat FiveM created by Ewen & Redouu 
---       ^7Discord : https://discord.gg/QKpBSrzhTr
---       ^7[License] Your license is valid
---       ^7[SeaShield] -> BanList Loaded
---                         ]])
---           Citizen.Wait(500)
---           va = true
---           EZAEAZE4AZ4AE6ZA84AZ4DAZ4D9AZ84EZA98E4AZ98A4E98AE4ZA98AZ4E89AZ4EAZ98E4ZA89E4AZE89AZ4E8AZ94EAZ89E4A4AZE4AZ98E4AZ8E9AZ4E89AZ4EAZ89E4AZE98AE4AZ89EA4ZE98AZE4AZ89EAZ4E98A494ZAEAZ()
---         end
---       else
---         for fj = 1, 5 do
---           print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
---         end
---         Wait(2500)
---         os.exit()
---       end
---     else
---       for fh = 1, 5 do
---         print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
---       end
---       Wait(2500)
---       os.exit()
---     end
---   end)
-end)
 
         print([[
 
