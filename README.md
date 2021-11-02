@@ -1,3 +1,1 @@
-# seashield
-seashield crack
- BUG mais debug soon
+# seashield source code
