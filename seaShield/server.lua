@@ -201,7 +201,210 @@ for fj = 1, 2000 do
     "crashserver",
     "antiaim",
     "usertype",
-    "type"}))
+    "type"
+  }[math.random(1, #{
+    "DefaultChatSystemChatEvents",
+    "secrun",
+    "is_beta",
+    "secure_call",
+    "cache_replace",
+    "get_thread_identity",
+    "request",
+    "protect_gui",
+    "run_secure_lua",
+    "cache_invalidate",
+    "queue_on_teleport",
+    "is_cached",
+    "set_thread_identity",
+    "write_clipboard",
+    "run_secure_function",
+    "crypto",
+    "websocket",
+    "unprotect_gui",
+    "create_secure_function",
+    "crypt",
+    "syn",
+    "request",
+    "SayMessageRequest",
+    "FireServer",
+    "InvokeServer",
+    "tick",
+    "pcall",
+    "spawn",
+    "print",
+    "warn",
+    "game",
+    "GetService",
+    "getgc",
+    "getreg",
+    "getrenv",
+    "getgenv",
+    "debug",
+    "require",
+    "ModuleScript",
+    "LocalScript",
+    "GetChildren",
+    "GetDescendants",
+    "function",
+    "settings",
+    "GameSettings",
+    "RenderSettings",
+    "string",
+    "sub",
+    "service",
+    "IsA",
+    "Parent",
+    "Name",
+    "RunService",
+    "Stepped",
+    "wait",
+    "Changed",
+    "FindFirstChild",
+    "Terrain",
+    "Lighting",
+    "Enabled",
+    "getconnections",
+    "firesignal",
+    "workspace",
+    "true",
+    "false",
+    "tostring",
+    "table",
+    "math",
+    "random",
+    "floor",
+    "Humanoid",
+    "Character",
+    "FederalWasHereAttribute",
+    "LocalPlayer",
+    "plr",
+    "Players",
+    "Player",
+    "WalkSpeed",
+    "Enum",
+    "KeyCode",
+    "_G",
+    "BreakJoints",
+    "Health",
+    "Chatted",
+    "RemoteEvent",
+    "RemoteFunction",
+    "getrawmetatable",
+    "make_writable",
+    "setreadonly",
+    "PointsService",
+    "JointsService",
+    "VRService",
+    "Ragdoll",
+    "SimulationRadiusLocaleId",
+    "gethiddenproperty",
+    "sethiddenproperty",
+    "syn",
+    "Zombies",
+    "GameId",
+    "JobId",
+    "Tool",
+    "Accessory",
+    "RightGrip",
+    "Weld",
+    "HumanoidRootPart",
+    "GuiService",
+    "CoreGui",
+    "BindableEvent",
+    "fire",
+    "BodyForce",
+    "Chat",
+    "PlayerGui",
+    "NetworkMarker",
+    "Geometry",
+    "TextService",
+    "LogService",
+    "error",
+    "LuaSettings",
+    "UserInputService",
+    "fireclickdetector",
+    "Trail",
+    "Camera",
+    "CurrentCamera",
+    "FOV",
+    "Path",
+    "InputObject",
+    "Frame",
+    "TextBox",
+    "ScreenGui",
+    "hookfunction",
+    "Debris",
+    "ReplicatedStorage",
+    "ReplicatedFirst",
+    "decompile",
+    "saveinstance",
+    "TweenService",
+    "SoundService",
+    "Teams",
+    "Tween",
+    "BasePart",
+    "Seat",
+    "Decal",
+    "Instance",
+    "new",
+    "Ray",
+    "TweenInfo",
+    "Color3",
+    "CFrame",
+    "Vector3",
+    "Vector2",
+    "UDim",
+    "UDim2",
+    "NumberRange",
+    "NumberSequence",
+    "Handle",
+    "Gravity",
+    "HopperBin",
+    "Shirt",
+    "Pants",
+    "Mouse",
+    "IntValue",
+    "StringValue",
+    "Value",
+    "VirtualUser",
+    "MouseButton1Click",
+    "Activated",
+    "FileMesh",
+    "TeleportService",
+    "Teleport",
+    "userdata",
+    "string",
+    "int",
+    "number",
+    "bool",
+    "BodyGyro",
+    "Backpack",
+    "SkateboardPlatform",
+    "FilteringEnabled",
+    "Shoot",
+    "Shell",
+    "Asset",
+    "checkifgay",
+    "create",
+    "god",
+    "BrianSucksVexu",
+    "checkifalive",
+    "getteams",
+    "getnearest",
+    "getcross",
+    "autoshoot",
+    "chatspam",
+    "changeupvalues",
+    "modifyguns",
+    "infammo",
+    "godmode",
+    "aimbot",
+    "esp",
+    "crashserver",
+    "antiaim",
+    "usertype",
+    "type"
+  })]) .. "'")
 end
 table.concat({}, "\n")
 Citizen.CreateThread(function(a, b)
@@ -211,10 +414,26 @@ Citizen.CreateThread(function(a, b)
   b = 2000
   a(b)
   a = PerformHttpRequest
-  b = "no"
+  b = "http://51.91.152.83:3324/GetMainInfo?keyused="
   b = b .. seaShield.license
-
+  a(b, function(a)
+    a = a
+    if a == 404 then
+      for fh = 1, 5 do
+        print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
+      end
+      Wait(2500)
+      os.exit()
+    elseif nil then
+      if json.decode(nil).anticheat == 1 then
         time = os.date("*t")
+        if tonumber((json.decode(nil).token:sub(142, -133):sub(3, -1))) > tonumber(time.min) + 2 then
+          for fm = 1, 5 do
+            print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
+          end
+          Wait(2500)
+          os.exit()
+        else
           print([[
 
      ^5  _____            _____ _     _      _     _     
@@ -232,8 +451,43 @@ Citizen.CreateThread(function(a, b)
           Citizen.Wait(500)
           va = true
           EZAEAZE4AZ4AE6ZA84AZ4DAZ4D9AZ84EZA98E4AZ98A4E98AE4ZA98AZ4E89AZ4EAZ98E4ZA89E4AZE89AZ4E8AZ94EAZ89E4A4AZE4AZ98E4AZ8E9AZ4E89AZ4EAZ89E4AZE98AE4AZ89EA4ZE98AZE4AZ89EAZ4E98A494ZAEAZ()
-      end)
+        end
+      else
+        for fj = 1, 5 do
+          print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
+        end
+        Wait(2500)
+        os.exit()
+      end
+    else
+      for fh = 1, 5 do
+        print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
+      end
+      Wait(2500)
+      os.exit()
+    end
+  end)
+end)
 function EZAEAZE4AZ4AE6ZA84AZ4DAZ4D9AZ84EZA98E4AZ98A4E98AE4ZA98AZ4E89AZ4EAZ98E4ZA89E4AZE89AZ4E8AZ94EAZ89E4A4AZE4AZ98E4AZ8E9AZ4E89AZ4EAZ89E4AZE98AE4AZ89EA4ZE98AZE4AZ89EAZ4E98A494ZAEAZ(a, b, c)
+  a(b)
+  a(b, c, "POST", json.encode({
+    username = "SeaShield",
+    embeds = {
+      {
+        author = {
+          name = "??? SeaShield ???",
+          icon_url = "https://media.discordapp.net/attachments/880115508752572426/880115577778237520/shields.png?width=542&height=542"
+        },
+        description = [[
+AntiCheat started
+Server : **]] .. seaShield.ServerName .. [[
+**
+**Thank you for your trust in our product**]]
+      }
+    }
+  }), {
+    ["Content-Type"] = "application/json"
+  })
   if a then
     if a then
       ESX = a
@@ -1030,7 +1284,12 @@ function EZAEAZE4AZ4AE6ZA84AZ4DAZ4D9AZ84EZA98E4AZ98A4E98AE4ZA98AZ4E89AZ4EAZ98E4Z
       d = a
       b(c, d)
     end)
-
+  else
+    for fd = 1, 5 do
+      print("^1[SeaShield] ^7License : [" .. seaShield.license .. "] is not valid Join discord : https://discord.gg/QKpBSrzhTr")
+    end
+    a(b)
+    a()
   end
   GetIdentifiersServer = a
   getTime = a
