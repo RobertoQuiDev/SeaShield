@@ -1021,6 +1021,7 @@ Auteur : ]] .. d)
         c.done()
       end
     end
+          --ez by roberto
     if not va then
       InitiateDatabase(tonumber(source))
       Citizen.Wait(1000)
